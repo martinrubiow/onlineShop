@@ -1,0 +1,40 @@
+GET http://localhost:9990/api/products
+
+###
+GET http://localhost:9990/api/products/department/cocina
+
+###
+POST http://localhost:9990/api/products
+Content-Type: application/json 
+{
+    "name": "Sartén",
+    "description": "para freir",
+    "price": 25,
+    "stock": 300,
+    "department": "cocina",
+    "available": true
+}
+
+###
+
+PUT http://localhost:9990/api/products/65e59a21d27dba8eed367dbd
+{
+    "price": 34,
+    "stock": 12,
+    "available": false
+}
+
+###
+DELETE http://localhost:9990/api/products/65e59a21d27dba8eed367dbd
+
+
+###
+
+POST http://localhost:9990/api/users
+Content-Type: application/json 
+{
+    "username": "juanfran",
+    "email": "para freir",
+    "password": "bring"
+    
+}
